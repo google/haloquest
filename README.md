@@ -3,8 +3,6 @@
 This repository contains a colab that shows how to load the HaloQuest data and
 how to use the Auto-Eval system.
 
-The dataset is also available in spreadsheet form [here](https://docs.google.com/spreadsheets/d/10pVmWYPsa8Blai09vSiWgkxnfzPGBokvDvAejZB4PLM/).
-
 Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/Hallucinated-Visual-Question-Answering).
 
 ## Citing this work
