@@ -1,30 +1,18 @@
 # haloquest
 
-TODO(b/344877350): Add a description for your new project, explain what is
-being released here, etc... Additional, the following sections are normally
-expected for all releases. Feel free to add additional sections if appropriate
-for your project.
+This repository contains a colab that shows how to load the HaloQuest data and
+how to use the Auto-Eval system.
 
-## Installation
+The dataset is also available in spreadsheet form [here](https://docs.google.com/spreadsheets/d/10pVmWYPsa8Blai09vSiWgkxnfzPGBokvDvAejZB4PLM/).
 
-Write instructions for how the user should install your code. The instructions
-should ideally be valid when copy-pasted. You can combine this with the Usage
-section if there's no separate installation step.
-
-## Usage
-
-Write example usage of your code. The instructions should ideally be valid when
-copy-pasted, and will be used by your technical reviewer to verify that your
-package functions correctly.
+Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/Hallucinated-Visual-Question-Answering).
 
 ## Citing this work
 
-Add citation details here, usually a pastable BibTeX snippet:
-
 ```latex
-@article{publicationname,
-      title={Publication Name},
-      author={Author One and Author Two and Author Three},
+@article{haloquest,
+      title={HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning},
+      author={Zhecan Wang and Garrett Bingham and Adams Wei Yu and Quoc V. Le and Thang Luong and Golnaz Ghiasi},
       year={2024},
 }
 ```
