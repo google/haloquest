@@ -28,6 +28,10 @@ All other materials are licensed under the Creative Commons Attribution 4.0
 International License (CC-BY). You may obtain a copy of the CC-BY license at:
 https://creativecommons.org/licenses/by/4.0/legalcode
 
+Image URLs are from the [Open Images Dataset v7](https://storage.googleapis.com/openimages/web/factsfigures_v7.html#publications)
+and [Midjourney Showcase](https://www.midjourney.com/showcase). Images may be
+individually licensed and you should verify the license for each image yourself.
+
 Unless required by applicable law or agreed to in writing, all software and
 materials distributed here under the Apache 2.0 or CC-BY licenses are
 distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
