@@ -1,5 +1,7 @@
 # HaloQuest
 
+[[Project Page]](https://github.com/google/haloquest/) [[Paper]](https://arxiv.org/abs/2407.15680) [[Code]](https://github.com/ZhecanJamesWang/HaloQuest) [[Colab]](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb)
+
 Welcome to the repository of our ECCV 2024 paper, [**HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning**](https://arxiv.org/abs/2407.15680). This repository contains a colab that shows how to load the HaloQuest data and how to use the Auto-Eval system.
 
 Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/HaloQuest).
@@ -13,6 +15,11 @@ Code to reproduce the experiments in the paper is available [here](https://githu
       year={2024},
 }
 ```
+## Data
+
+
+
+## Using Data
 
 ## License and disclaimer
 
