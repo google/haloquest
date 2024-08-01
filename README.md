@@ -52,7 +52,7 @@ If you have any questions or suggestions, please feel free to open an issue or s
 ```latex
 @inproceedings{wang2024haloquest,
   title={HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning},
-  author={Wang, Zhecan and Bingham, Garrett and Yu, Adams and Le, Quoc and Luong, Thang and Ghiasi, Golnaz},
+  author={Zhecan Wang and Garrett Bingham and Adams Wei Yu and Quoc V. Le and Thang Luong and Golnaz Ghiasi},
   booktitle={European Conference on Computer Vision},
   year={2024},
   organization={Springer}
