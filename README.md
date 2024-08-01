@@ -26,12 +26,12 @@ Code to reproduce the experiments in the paper is available [here](https://githu
 ### Data Collection
 HaloQuest includes a mix of real images from the Open Images dataset and synthetic images generated using Midjourney and Stable Diffusion. Images were curated based on interest and comprehensibility. Questions and answers were crafted by humans and large language models (LLMs), focusing on false premises, visually challenging questions, and questions with insufficient context.
 
-![image](./assets/haloquest_data_collection.jpg)
+![image](examples.png)
 
 ### Data Instances
 
 Example entries from HaloQuest include complex questions requiring nuanced reasoning and detailed answers. Below are some samples:
-![image](./assets/haloquest_samples_small.jpeg)
+![image]()
 
 ### Data Splits
 The dataset is split into training and evaluation sets. The following table provides detailed statistics for each subset.
