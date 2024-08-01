@@ -14,7 +14,7 @@ Code to reproduce the experiments in the paper is available [here](https://githu
 
 ### Summary
 
-**HaloQuest** is a novel visual question answering (VQA) dataset that focuses on multimodal hallucination in vision-language models (VLMs). It contains over **7,748** examples with a combination of real and synthetically generated images, annotated with **questions** and **answers** designed to trigger and evaluate hallucinations.
+**HaloQuest** is a novel visual question answering (VQA) dataset that focuses on multimodal hallucination in vision-language models (VLMs). It contains **7,748** examples with a combination of real and synthetically generated images, annotated with **questions** and **answers** designed to trigger and evaluate hallucinations.
 
 ### Supported Tasks
 
@@ -43,9 +43,6 @@ The dataset is split into training and evaluation sets. The following table prov
 [Zhecan Wang](https://www.zhecanwang.com/)\*, [Garrett Bingham](https://garrettbingham.com/)\*, [Adams Wei Yu](https://adamsyu.github.io/), [Quoc V. Le](https://research.google/people/quoc-v-le/?&type=google), [Thang Luong](https://nlp.stanford.edu/~lmthang/), [Golnaz Ghiasi](https://research.google/people/golnaz-ghiasi/?&type=google)
 
 (\* ZW and GB are main contributors. ZW did some work while at Google DeepMind.)
-
-## Contact
-If you have any questions or suggestions, please feel free to open an issue or send emails to the contributors.
 
 ## Citing this work
 
