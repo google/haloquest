@@ -46,9 +46,9 @@ The dataset is split into training and evaluation sets. The following table prov
 
 ## Contributions
 
-[Zhecan Wang](https://zhecanwang.github.io)\*, [Garrett Bingham](https://garrettbingham.github.io)\*, [Adams Wei Yu](https://adamsyuwei.github.io), [Quoc V. Le](https://quocle.github.io), [Thang Luong](https://thangluong.github.io), [Golnaz Ghiasi](https://golnazghiasi.github.io)<sup>+</sup>
+[Zhecan Wang](https://www.zhecanwang.com/)\*, [Garrett Bingham](https://garrettbingham.com/)\*, [Adams Wei Yu](https://adamsyu.github.io/), [Quoc V. Le](https://research.google/people/quoc-v-le/?&type=google), [Thang Luong](https://nlp.stanford.edu/~lmthang/), [Golnaz Ghiasi](https://research.google/people/golnaz-ghiasi/?&type=google)
 
-(\* equal contribution, <sup>+</sup> corresponding author)
+(\* ZW and GB are main contributors. ZW did some work while at Google DeepMind.)
 
 ## Contact
 If you have any questions or suggestions, please feel free to open an issue or send emails to the contributors.
@@ -95,4 +95,4 @@ This is not an official Google product.
 - [x] Release Dataset
 - [x] Release Evaluation Scripts
 - [x] Release Dataset Tools
-- [] Project Page
+- [ ] Project Page
