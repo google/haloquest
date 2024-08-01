@@ -31,7 +31,7 @@ HaloQuest includes a mix of real images from the Open Images dataset and synthet
 ### Data Instances
 
 Example entries from HaloQuest include complex questions requiring nuanced reasoning and detailed answers. Below are some samples:
-![image](./examples.png)
+![image](./example-image.png)
 
 ### Data Splits
 The dataset is split into training and evaluation sets. The following table provides detailed statistics for each subset.
