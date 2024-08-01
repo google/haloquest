@@ -1,10 +1,9 @@
 # HaloQuest
 
-Welcome to the repository of our ECCV 2024 paper, [**HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning**](https://arxiv.org/abs/2407.15680). This repository contains a colab that shows how to load the HaloQuest data and how to use the Auto-Eval system.
+Welcome to the repository of our ECCV 2024 paper, [**HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning**](https://arxiv.org/abs/2407.15680). This repository contains a [colab](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb) that shows how to load the HaloQuest data and how to use the Auto-Eval system.
 
 Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/HaloQuest).
 
-Code to load the data is available [here](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb)
 
 ![image](./example-image.png)
 
@@ -24,7 +23,7 @@ Code to load the data is available [here](https://github.com/google/haloquest/bl
 ## Dataset Details
 
 ### Data Collection
-HaloQuest includes a mix of real images from the Open Images dataset and synthetic images generated using Midjourney and Stable Diffusion. Images were curated based on interest and comprehensibility. Questions and answers were crafted by humans and large language models (LLMs), focusing on false premises, visually challenging questions, and questions with insufficient context.
+HaloQuest includes a mix of real images from the Open Images dataset and synthetic images generated using Midjourney. Images were curated based on interest and comprehensibility. Questions and answers were crafted by humans and large language models (LLMs), focusing on false premises, visually challenging questions, and questions with insufficient context.
 
 ![image](./data-collection-pipeline.png)
 
@@ -38,9 +37,6 @@ The dataset is split into training and evaluation sets. The following table prov
 | Evaluation Set | 217         | 391              | 304                     | 183                           | 121                           | 608           |
 | Total          | 3202        | 4546             | 3002                    | 3156                          | 1590                          | 7748          |
 
-### Using the Data
-
-Refer to [Colab](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb) for using our data.
 
 ## Contributions
 
