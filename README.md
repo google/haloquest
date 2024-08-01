@@ -44,6 +44,8 @@ The dataset is split into training and evaluation sets. The following table prov
 
 ### Using the Data
 
+Refer to [Colab](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb) for using our data.
+
 ## Contributions
 
 [Zhecan Wang](https://www.zhecanwang.com/)\*, [Garrett Bingham](https://garrettbingham.com/)\*, [Adams Wei Yu](https://adamsyu.github.io/), [Quoc V. Le](https://research.google/people/quoc-v-le/?&type=google), [Thang Luong](https://nlp.stanford.edu/~lmthang/), [Golnaz Ghiasi](https://research.google/people/golnaz-ghiasi/?&type=google)
