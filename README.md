@@ -1,12 +1,12 @@
 # HaloQuest
 
-[[Project Page]](https://github.com/google/haloquest/) [[Paper]](https://arxiv.org/abs/2407.15680) [[Code]](https://github.com/ZhecanJamesWang/HaloQuest) [[Colab]](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb)
-
 Welcome to the repository of our ECCV 2024 paper, [**HaloQuest: A Visual Hallucination Dataset for Advancing Multimodal Reasoning**](https://arxiv.org/abs/2407.15680). This repository contains a colab that shows how to load the HaloQuest data and how to use the Auto-Eval system.
 
 Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/HaloQuest).
 
-![image](./haloquest-teaser-image.png)
+Code to load the data is available [here](https://github.com/google/haloquest/blob/main/HaloQuest_Colab.ipynb)
+
+![image](./example-image.png)
 
 ## Updates
 - 2024.07.22: Our paper is on arxiv
@@ -28,10 +28,6 @@ HaloQuest includes a mix of real images from the Open Images dataset and synthet
 
 ![image](./data-collection-pipeline.png)
 
-### Data Instances
-
-Example entries from HaloQuest include complex questions requiring nuanced reasoning and detailed answers. Below are some samples:
-![image](./example-image.png)
 
 ### Data Splits
 The dataset is split into training and evaluation sets. The following table provides detailed statistics for each subset.
@@ -91,11 +87,3 @@ either express or implied. See the licenses for the specific language governing
 permissions and limitations under those licenses.
 
 This is not an official Google product.
-
-
-## TODO List
-- [x] Publish Paper
-- [x] Release Dataset
-- [x] Release Evaluation Scripts
-- [x] Release Dataset Tools
-- [ ] Project Page
