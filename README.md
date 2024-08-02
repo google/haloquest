@@ -37,8 +37,8 @@ The dataset is split into training and evaluation sets. The following table prov
 | Total          | 3202        | 4546             | 3002                    | 3156                          | 1590                          | 7748          |
 
 
-## Leaderboard
-
+## Leaderboard 
+(The Auto-Eval was based on the Gemini version dated May 2024)
 <table>
   <thead>
     <tr>
