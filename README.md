@@ -38,7 +38,7 @@ The dataset is split into training and evaluation sets. The following table prov
 
 
 ## Leaderboard 
-(The Auto-Eval was based on the Gemini version dated May 2024)
+(Gemini 1.0 Pro was used for Auto-Eval)
 <table>
   <thead>
     <tr>
