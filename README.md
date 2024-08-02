@@ -4,6 +4,7 @@ Welcome to the repository of our ECCV 2024 paper, [**HaloQuest: A Visual Halluci
 
 Code to reproduce the experiments in the paper is available [here](https://github.com/ZhecanJamesWang/HaloQuest).
 
+[Unofficial Project Page](https://haloquest.github.io/)
 
 ![image](./example-image.png)
 
