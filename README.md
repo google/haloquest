@@ -38,29 +38,295 @@ The dataset is split into training and evaluation sets. The following table prov
 | Evaluation Set | 217         | 391              | 304                     | 183                           | 121                           | 608           |
 | Total          | 3202        | 4546             | 3002                    | 3156                          | 1590                          | 7748          |
 
+
 ## Leaderboard
 
-| Model (#Param)     | Rank | Overall | Generated         | Real             | False Premise      | Visually Challenging | Insufficient Context |
-|--------------------|------|---------|-------------------|------------------|--------------------|----------------------|----------------------|
-|                    |      | Human Eval | Auto-Eval | Human Eval | Auto-Eval | Human Eval | Auto-Eval | Human Eval | Auto-Eval | Human Eval | Auto-Eval | Human Eval | Auto-Eval | Human Eval | Auto-Eval |
-| Gemini 1.5 Pro     | 1    | 76.1    | 77.9    | 74.7    | 78.3    | 78.7    | 77.2    | 80.4    | 83.7    | 57.3    | 56.3    | 91      | 92.5    |
-| GPT-4o             | 2    | 68.1    | 63.2    | 68.8    | 63.8    | 66.9    | 62.2    | 68.5    | 65.2    | 58.3    | 55.2    | 80.6    | 68.7    |
-| GPT-4              | 3    | 62.9    | 61.2    | 64.3    | 61.1    | 60.6    | 61.4    | 64.7    | 63      | 46.9    | 44.8    | 80.6    | 79.1    |
-| BEiT-3 (0.7B)      | 4    | 35.9    | 40      | 41.2    | 44.3    | 26.3    | 32.3    | 24.1    | 28.4    | 36.6    | 36.1    | 9.1     | 10.7    |
-| InstructBLIP (12B) | 5    | 25.5    | 28.5    | 28.4    | 31.5    | 20.3    | 23      | 28.4    | 32      | 33.3    | 33.9    | 6.6     | 11.6    |
-| InstructBLIP (8B)  | 6    | 25      | 27.3    | 28.4    | 29.7    | 18.9    | 23      | 28.4    | 32      | 6.6     | 11.6    | 33.3    | 33.9    |
-| BLIP2 (12B)        | 7    | 21.1    | 22.5    | 24.8    | 26.1    | 14.29   | 16.1    | 16.8    | 19.5    | 35.5    | 32.8    | 9.9     | 14.9    |
-| MiniGPT4 (13B)     | 8    | 18.7    | 25.2    | 18.2    | 24      | 18.9    | 27.2    | 16.2    | 21.5    | 10.4    | 13.7    | 36.4    | 51.2    |
-| MiniGPT4 (7B)      | 9    | 18.6    | 19.1    | 18.1    | 19.4    | 18      | 18.4    | 13.2    | 13.2    | 26.5    | 27.3    | 15.7    | 16.5    |
-| Open-flamingo (9B) | 10   | 13.8    | 15      | 16.1    | 17.1    | 9.7     | 11.1    | 13.2    | 13.9    | 19.1    | 21.3    | 7.4     | 8.3     |
-| LLaVA (13B)        | 11   | 10.9    | 10.9    | 12.3    | 12.8    | 8.2     | 7.4     | 2.3     | 1.7     | 30.6    | 31.2    | 2.5     | 3.3     |
-| BLIP2 (8B)         | 12   | 10.9    | 11.8    | 11.5    | 11.8    | 9.7     | 12      | 5       | 4.6     | 26.8    | 26.8    | 1.7     | 6.6     |
-| mPLUG-Owl1 (7B)    | 13   | 9.7     | 8.7     | 11.3    | 10.2    | 6.9     | 6       | 1       | 0.3     | 29      | 26.8    | 2.5     | 2.5     |
-| mPLUG-Owl2 (7B)    | 14   | 9.2     | 10.4    | 11      | 11.3    | 6       | 8.8     | 0.8     | 3.3     | 28.4    | 27.9    | 0.8     | 3.3     |
-| OFA (1B)           | 15   | 8.7     | 10.2    | 9.7     | 11.3    | 6.9     | 8.3     | 5       | 6.3     | 19.7    | 20.2    | 1.7     | 5       |
-| Open-flamingo (3B) | 16   | 6.9     | 8.2     | 7.4     | 8.7     | 6       | 7.4     | 0.7     | 1.3     | 19.1    | 21.3    | 4.1     | 5.8     |
-
-
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model (#Param)</th>
+      <th rowspan="2">Rank</th>
+      <th colspan="2">Overall</th>
+      <th colspan="2">Generated</th>
+      <th colspan="2">Real</th>
+      <th colspan="2">False Premise</th>
+      <th colspan="2">Visually Challenging</th>
+      <th colspan="2">Insufficient Context</th>
+    </tr>
+    <tr>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+      <th>Human Eval</th>
+      <th>Auto-Eval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemini 1.5 Pro</td>
+      <td>1</td>
+      <td>76.1</td>
+      <td>77.9</td>
+      <td>74.7</td>
+      <td>78.3</td>
+      <td>78.7</td>
+      <td>77.2</td>
+      <td>80.4</td>
+      <td>83.7</td>
+      <td>57.3</td>
+      <td>56.3</td>
+      <td>91</td>
+      <td>92.5</td>
+    </tr>
+    <tr>
+      <td>GPT-4o</td>
+      <td>2</td>
+      <td>68.1</td>
+      <td>63.2</td>
+      <td>68.8</td>
+      <td>63.8</td>
+      <td>66.9</td>
+      <td>62.2</td>
+      <td>68.5</td>
+      <td>65.2</td>
+      <td>58.3</td>
+      <td>55.2</td>
+      <td>80.6</td>
+      <td>68.7</td>
+    </tr>
+    <tr>
+      <td>GPT-4</td>
+      <td>3</td>
+      <td>62.9</td>
+      <td>61.2</td>
+      <td>64.3</td>
+      <td>61.1</td>
+      <td>60.6</td>
+      <td>61.4</td>
+      <td>64.7</td>
+      <td>63</td>
+      <td>46.9</td>
+      <td>44.8</td>
+      <td>80.6</td>
+      <td>79.1</td>
+    </tr>
+    <tr>
+      <td>BEiT-3 (0.7B)</td>
+      <td>4</td>
+      <td>35.9</td>
+      <td>40</td>
+      <td>41.2</td>
+      <td>44.3</td>
+      <td>26.3</td>
+      <td>32.3</td>
+      <td>24.1</td>
+      <td>28.4</td>
+      <td>36.6</td>
+      <td>36.1</td>
+      <td>9.1</td>
+      <td>10.7</td>
+    </tr>
+    <tr>
+      <td>InstructBLIP (12B)</td>
+      <td>5</td>
+      <td>25.5</td>
+      <td>28.5</td>
+      <td>28.4</td>
+      <td>31.5</td>
+      <td>20.3</td>
+      <td>23</td>
+      <td>28.4</td>
+      <td>32</td>
+      <td>33.3</td>
+      <td>33.9</td>
+      <td>6.6</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td>InstructBLIP (8B)</td>
+      <td>6</td>
+      <td>25</td>
+      <td>27.3</td>
+      <td>28.4</td>
+      <td>29.7</td>
+      <td>18.9</td>
+      <td>23</td>
+      <td>28.4</td>
+      <td>32</td>
+      <td>6.6</td>
+      <td>11.6</td>
+      <td>33.3</td>
+      <td>33.9</td>
+    </tr>
+    <tr>
+      <td>BLIP2 (12B)</td>
+      <td>7</td>
+      <td>21.1</td>
+      <td>22.5</td>
+      <td>24.8</td>
+      <td>26.1</td>
+      <td>14.29</td>
+      <td>16.1</td>
+      <td>16.8</td>
+      <td>19.5</td>
+      <td>35.5</td>
+      <td>32.8</td>
+      <td>9.9</td>
+      <td>14.9</td>
+    </tr>
+    <tr>
+      <td>MiniGPT4 (13B)</td>
+      <td>8</td>
+      <td>18.7</td>
+      <td>25.2</td>
+      <td>18.2</td>
+      <td>24</td>
+      <td>18.9</td>
+      <td>27.2</td>
+      <td>16.2</td>
+      <td>21.5</td>
+      <td>10.4</td>
+      <td>13.7</td>
+      <td>36.4</td>
+      <td>51.2</td>
+    </tr>
+    <tr>
+      <td>MiniGPT4 (7B)</td>
+      <td>9</td>
+      <td>18.6</td>
+      <td>19.1</td>
+      <td>18.1</td>
+      <td>19.4</td>
+      <td>18</td>
+      <td>18.4</td>
+      <td>13.2</td>
+      <td>13.2</td>
+      <td>26.5</td>
+      <td>27.3</td>
+      <td>15.7</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <td>Open-flamingo (9B)</td>
+      <td>10</td>
+      <td>13.8</td>
+      <td>15</td>
+      <td>16.1</td>
+      <td>17.1</td>
+      <td>9.7</td>
+      <td>11.1</td>
+      <td>13.2</td>
+      <td>13.9</td>
+      <td>19.1</td>
+      <td>21.3</td>
+      <td>7.4</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>LLaVA (13B)</td>
+      <td>11</td>
+      <td>10.9</td>
+      <td>10.9</td>
+      <td>12.3</td>
+      <td>12.8</td>
+      <td>8.2</td>
+      <td>7.4</td>
+      <td>2.3</td>
+      <td>1.7</td>
+      <td>30.6</td>
+      <td>31.2</td>
+      <td>2.5</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>BLIP2 (8B)</td>
+      <td>12</td>
+      <td>10.9</td>
+      <td>11.8</td>
+      <td>11.5</td>
+      <td>11.8</td>
+      <td>9.7</td>
+      <td>12</td>
+      <td>5</td>
+      <td>4.6</td>
+      <td>26.8</td>
+      <td>26.8</td>
+      <td>1.7</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>mPLUG-Owl1 (7B)</td>
+      <td>13</td>
+      <td>9.7</td>
+      <td>8.7</td>
+      <td>11.3</td>
+      <td>10.2</td>
+      <td>6.9</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.3</td>
+      <td>29</td>
+      <td>26.8</td>
+      <td>2.5</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>mPLUG-Owl2 (7B)</td>
+      <td>14</td>
+      <td>9.2</td>
+      <td>10.4</td>
+      <td>11</td>
+      <td>11.3</td>
+      <td>6</td>
+      <td>8.8</td>
+      <td>0.8</td>
+      <td>3.3</td>
+      <td>28.4</td>
+      <td>27.9</td>
+      <td>0.8</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>OFA (1B)</td>
+      <td>15</td>
+      <td>8.7</td>
+      <td>10.2</td>
+      <td>9.7</td>
+      <td>11.3</td>
+      <td>6.9</td>
+      <td>8.3</td>
+      <td>5</td>
+      <td>6.3</td>
+      <td>19.7</td>
+      <td>20.2</td>
+      <td>1.7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Open-flamingo (3B)</td>
+      <td>16</td>
+      <td>6.9</td>
+      <td>8.2</td>
+      <td>7.4</td>
+      <td>8.7</td>
+      <td>6</td>
+      <td>7.4</td>
+      <td>0.7</td>
+      <td>1.3</td>
+      <td>19.1</td>
+      <td>21.3</td>
+      <td>4.1</td>
+      <td>5.8</td>
+    </tr>
+  </tbody>
+</table>
 ## Contributions
 
 [Zhecan Wang](https://www.zhecanwang.com/)\*, [Garrett Bingham](https://garrettbingham.com/)\*, [Adams Wei Yu](https://adamsyu.github.io/), [Quoc V. Le](https://research.google/people/quoc-v-le/?&type=google), [Thang Luong](https://nlp.stanford.edu/~lmthang/), [Golnaz Ghiasi](https://research.google/people/golnaz-ghiasi/?&type=google)
